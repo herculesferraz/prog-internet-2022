@@ -14,4 +14,6 @@ Inicio
    leia(moedaReal)
    moedaDolar <- moedaReal / 3.25
    escreva("dollar :", moedaDolar:4:2)
+   
+   //aopa trem bao
 Fimalgoritmo
