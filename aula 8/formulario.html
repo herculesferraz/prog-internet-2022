@@ -55,6 +55,24 @@
                     <li><a href="#" </li> selecione uma lista</a></li>
                 </ul>
             </fieldset>
+            <fieldset>
+                <legend>Datalist</legend>
+                <ul>
+                    <li><a href="#inputLegumes">Legumes</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#selTimes">Times</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#selJogos">Jogos</a></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>TextArea</legend>
+                <ul>
+                    <li><a href="#txtRelat">Relato Jogos</a></li>
+                </ul>
+            </fieldset>
         </div>
     </section>
     <section id="cadastro">
@@ -232,10 +250,73 @@
                             src="https://images.kabum.com.br/produtos/fotos/133028/placa-de-video-asus-rog-strix-nvidia-geforce-rtx-3090-24gb-gddr6-rog-strix-rtx3090-o24g-white_1613654067_g.jpg"
                             alt="Imagem de uma 3090 Rog_Strix" width="200" id="image">
                     </div>
+                    <div>
+                        <fieldset>
+                            <legend>Uso do datalist</legend>
+                            <div>
+                                <label for="inputLegumes">Legumes:</label>
+                                <input type="text" name="inputLegumes" id="inputLegumes" list="listLegumes">
+                                <datalist id="listLegumes">
+                                    <option value="01">Cenoura</option>
+                                    <option value="02">Beringela</option>
+                                    <option value="03">Cebola</option>
+                                    <option value="04">Batata</option>
+                                    <option value="04">Pimentão</option>
+                                    <option value="05">Brocolis c/ queijo + bacon</option>
+                                </datalist>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Seletores</legend>
+                            <div>
+                                <label for="selTime">Time Do coração</label>
+                                <select name="selTime" id="selTime">
+                                    <optgroup label="Times CSGO top One">
+                                        <option value="01">Imperial</option>
+                                        <option value="02">Furia</option>
+                                        <option value="03">MIBR</option>
+                                        <option value="04">Astralis</option>
+                                        <option value="04">NAVI</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="selJogos">Jogos:</label>
+                                <div></div>
+                                <select name="selJogos" id="selJogos" multiple size="5">
+                                    <optgroup label="Aventura">
+                                        <option value="01">The Witcher 3</option>
+                                        <option value="02">Skyrin</option>
+                                    </optgroup>
+                                    <optgroup label="RPG">
+                                        <option value="01">Dark Souls 3</option>
+                                        <option value="02">Final Fantasy VII</option>
+                                    </optgroup>
+                                    <optgroup label="Indie">
+                                        <option value="01">Hollow Kingit</option>
+                                        <option value="02">Limbo</option>
+                                    </optgroup>
+                                    <optgroup label="FPS">
+                                        <option value="01">CSGO</option>
+                                        <option value="02">Warzone</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Usando Text Area</legend>
+                            <div>
+                                <label for="txtRelat">Relatos sobre os jogos selecionados</label>
+                                <div></div>
+                                <textarea name="tsxRelat" id="txtRelat" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
                     <input type="submit" value="enviar" id="btnEnviar">
                     <input type="reset" value="limpar" id="btnLimpar">
         </form>
     </section>
 </body>
-
 </html>
